@@ -1,0 +1,27 @@
+services:
+  test:
+    image: mcr.microsoft.com/dotnet/sdk:10.0-noble
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - nuget-cache:/root/.nuget/packages
+    command:
+      - dotnet
+      - test
+      - SingleFlightCacheStampedeLab.slnx
+      - -c
+      - Release
+
+  lab:
+    build:
+      context: .
+      target: runtime
+    volumes:
+      - ./artifacts:/app/artifacts
+    command:
+      - quick
+      - --output
+      - /app/artifacts
+
+volumes:
+  nuget-cache:
