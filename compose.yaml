@@ -5,12 +5,18 @@ services:
     volumes:
       - .:/workspace
       - nuget-cache:/root/.nuget/packages
+      - test-build:/build
     command:
       - dotnet
       - test
+      - --solution
       - SingleFlightCacheStampedeLab.slnx
       - -c
       - Release
+      - --artifacts-path
+      - /build
+      - --timeout
+      - 60s
 
   lab:
     build:
@@ -25,3 +31,4 @@ services:
 
 volumes:
   nuget-cache:
+  test-build:
