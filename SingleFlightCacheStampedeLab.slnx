@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SingleFlightCacheStampedeLab.Core/SingleFlightCacheStampedeLab.Core.csproj" />
+    <Project Path="src/SingleFlightCacheStampedeLab.Cli/SingleFlightCacheStampedeLab.Cli.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SingleFlightCacheStampedeLab.Tests/SingleFlightCacheStampedeLab.Tests.csproj" />
+  </Folder>
+</Solution>

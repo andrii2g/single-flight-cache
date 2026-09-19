@@ -1,0 +1,1 @@
+// Immutable backend diagnostics snapshot.

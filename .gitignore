@@ -1,0 +1,11 @@
+bin/
+obj/
+artifacts/
+TestResults/
+.vs/
+.idea/
+*.user
+*.suo
+*.coverage
+*.trx
+.DS_Store
