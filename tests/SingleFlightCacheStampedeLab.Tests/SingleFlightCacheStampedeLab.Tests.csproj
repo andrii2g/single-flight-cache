@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../../src/SingleFlightCacheStampedeLab.Core/SingleFlightCacheStampedeLab.Core.csproj" />
+    <ProjectReference Include="../../src/SingleFlightCacheStampedeLab.Cli/SingleFlightCacheStampedeLab.Cli.csproj" />
   </ItemGroup>
 
   <ItemGroup>
