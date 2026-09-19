@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="960" height="580" viewBox="0 0 960 580" role="img" aria-labelledby="chart-title chart-description" font-family="system-ui, sans-serif" font-size="13" xmlns="http://www.w3.org/2000/svg">
+  <title id="chart-title">Backend load amplification</title>
+  <desc id="chart-description">HotKeyBurst | backend 100 ms | medians across iterations</desc>
+  <rect width="100%" height="100%" rx="16" fill="#f8fafc" />
+  <text x="32" y="40" fill="#17233b">Backend load amplification</text>
+  <text x="32" y="65" fill="#526078">HotKeyBurst | backend 100 ms | medians across iterations</text>
+  <text x="95" y="92" fill="#526078">Physical / logical loads</text>
+  <line x1="95" y1="440" x2="905" y2="440" stroke="#dce3ed" />
+  <text x="83" y="445" fill="#526078" text-anchor="end">0</text>
+  <text x="95" y="464" fill="#526078" text-anchor="middle">0</text>
+  <line x1="95" y1="373" x2="905" y2="373" stroke="#dce3ed" />
+  <text x="83" y="378" fill="#526078" text-anchor="end">112.64</text>
+  <text x="257" y="464" fill="#526078" text-anchor="middle">102.4</text>
+  <line x1="95" y1="306" x2="905" y2="306" stroke="#dce3ed" />
+  <text x="83" y="311" fill="#526078" text-anchor="end">225.28</text>
+  <text x="419" y="464" fill="#526078" text-anchor="middle">204.8</text>
+  <line x1="95" y1="239" x2="905" y2="239" stroke="#dce3ed" />
+  <text x="83" y="244" fill="#526078" text-anchor="end">337.92</text>
+  <text x="581" y="464" fill="#526078" text-anchor="middle">307.2</text>
+  <line x1="95" y1="172" x2="905" y2="172" stroke="#dce3ed" />
+  <text x="83" y="177" fill="#526078" text-anchor="end">450.56</text>
+  <text x="743" y="464" fill="#526078" text-anchor="middle">409.6</text>
+  <line x1="95" y1="105" x2="905" y2="105" stroke="#dce3ed" />
+  <text x="83" y="110" fill="#526078" text-anchor="end">563.2</text>
+  <text x="905" y="464" fill="#526078" text-anchor="middle">512</text>
+  <line x1="95" y1="440" x2="905" y2="440" stroke="#8795ab" />
+  <text x="440" y="494" fill="#526078">Request concurrency</text>
+  <g class="series" data-name="NaiveCacheAside">
+    <polyline points="96.582,439.405 98.164,438.81 101.328,437.621 107.656,435.241 120.313,430.483 145.625,420.966 196.25,401.932 297.5,363.864 500,287.727 905,135.455" fill="none" stroke="#d65c32" stroke-width="2.5" stroke-dasharray="" />
+    <circle cx="96.582" cy="439.405" r="3.5" fill="#d65c32">
+      <title>NaiveCacheAside: 1, 1</title>
+    </circle>
+    <circle cx="98.164" cy="438.81" r="3.5" fill="#d65c32">
+      <title>NaiveCacheAside: 2, 2</title>
+    </circle>
+    <circle cx="101.328" cy="437.621" r="3.5" fill="#d65c32">
+      <title>NaiveCacheAside: 4, 4</title>
+    </circle>
+    <circle cx="107.656" cy="435.241" r="3.5" fill="#d65c32">
+      <title>NaiveCacheAside: 8, 8</title>
+    </circle>
+    <circle cx="120.313" cy="430.483" r="3.5" fill="#d65c32">
+      <title>NaiveCacheAside: 16, 16</title>
+    </circle>
+    <circle cx="145.625" cy="420.966" r="3.5" fill="#d65c32">
+      <title>NaiveCacheAside: 32, 32</title>
+    </circle>
+    <circle cx="196.25" cy="401.932" r="3.5" fill="#d65c32">
+      <title>NaiveCacheAside: 64, 64</title>
+    </circle>
+    <circle cx="297.5" cy="363.864" r="3.5" fill="#d65c32">
+      <title>NaiveCacheAside: 128, 128</title>
+    </circle>
+    <circle cx="500" cy="287.727" r="3.5" fill="#d65c32">
+      <title>NaiveCacheAside: 256, 256</title>
+    </circle>
+    <circle cx="905" cy="135.455" r="3.5" fill="#d65c32">
+      <title>NaiveCacheAside: 512, 512</title>
+    </circle>
+  </g>
+  <line x1="95" y1="539" x2="121" y2="539" stroke="#d65c32" />
+  <text x="130" y="544" fill="#d65c32">NaiveCacheAside</text>
+  <g class="series" data-name="GlobalLock">
+    <polyline points="96.582,439.405 98.164,439.405 101.328,439.405 107.656,439.405 120.313,439.405 145.625,439.405 196.25,439.405 297.5,439.405 500,439.405 905,439.405" fill="none" stroke="#7458c9" stroke-width="2.5" stroke-dasharray="8 5" />
+    <circle cx="96.582" cy="439.405" r="3.5" fill="#7458c9">
+      <title>GlobalLock: 1, 1</title>
+    </circle>
+    <circle cx="98.164" cy="439.405" r="3.5" fill="#7458c9">
+      <title>GlobalLock: 2, 1</title>
+    </circle>
+    <circle cx="101.328" cy="439.405" r="3.5" fill="#7458c9">
+      <title>GlobalLock: 4, 1</title>
+    </circle>
+    <circle cx="107.656" cy="439.405" r="3.5" fill="#7458c9">
+      <title>GlobalLock: 8, 1</title>
+    </circle>
+    <circle cx="120.313" cy="439.405" r="3.5" fill="#7458c9">
+      <title>GlobalLock: 16, 1</title>
+    </circle>
+    <circle cx="145.625" cy="439.405" r="3.5" fill="#7458c9">
+      <title>GlobalLock: 32, 1</title>
+    </circle>
+    <circle cx="196.25" cy="439.405" r="3.5" fill="#7458c9">
+      <title>GlobalLock: 64, 1</title>
+    </circle>
+    <circle cx="297.5" cy="439.405" r="3.5" fill="#7458c9">
+      <title>GlobalLock: 128, 1</title>
+    </circle>
+    <circle cx="500" cy="439.405" r="3.5" fill="#7458c9">
+      <title>GlobalLock: 256, 1</title>
+    </circle>
+    <circle cx="905" cy="439.405" r="3.5" fill="#7458c9">
+      <title>GlobalLock: 512, 1</title>
+    </circle>
+  </g>
+  <line x1="345" y1="539" x2="371" y2="539" stroke="#7458c9" />
+  <text x="380" y="544" fill="#7458c9">GlobalLock</text>
+  <g class="series" data-name="SingleFlight">
+    <polyline points="96.582,439.405 98.164,439.405 101.328,439.405 107.656,439.405 120.313,439.405 145.625,439.405 196.25,439.405 297.5,439.405 500,439.405 905,439.405" fill="none" stroke="#087f8c" stroke-width="2.5" stroke-dasharray="3 4" />
+    <circle cx="96.582" cy="439.405" r="3.5" fill="#087f8c">
+      <title>SingleFlight: 1, 1</title>
+    </circle>
+    <circle cx="98.164" cy="439.405" r="3.5" fill="#087f8c">
+      <title>SingleFlight: 2, 1</title>
+    </circle>
+    <circle cx="101.328" cy="439.405" r="3.5" fill="#087f8c">
+      <title>SingleFlight: 4, 1</title>
+    </circle>
+    <circle cx="107.656" cy="439.405" r="3.5" fill="#087f8c">
+      <title>SingleFlight: 8, 1</title>
+    </circle>
+    <circle cx="120.313" cy="439.405" r="3.5" fill="#087f8c">
+      <title>SingleFlight: 16, 1</title>
+    </circle>
+    <circle cx="145.625" cy="439.405" r="3.5" fill="#087f8c">
+      <title>SingleFlight: 32, 1</title>
+    </circle>
+    <circle cx="196.25" cy="439.405" r="3.5" fill="#087f8c">
+      <title>SingleFlight: 64, 1</title>
+    </circle>
+    <circle cx="297.5" cy="439.405" r="3.5" fill="#087f8c">
+      <title>SingleFlight: 128, 1</title>
+    </circle>
+    <circle cx="500" cy="439.405" r="3.5" fill="#087f8c">
+      <title>SingleFlight: 256, 1</title>
+    </circle>
+    <circle cx="905" cy="439.405" r="3.5" fill="#087f8c">
+      <title>SingleFlight: 512, 1</title>
+    </circle>
+  </g>
+  <line x1="595" y1="539" x2="621" y2="539" stroke="#087f8c" />
+  <text x="630" y="544" fill="#087f8c">SingleFlight</text>
+</svg>
