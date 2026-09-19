@@ -1,1 +1,3 @@
-// Immutable cache entry containing value and expiry.
+namespace SingleFlightCacheStampedeLab.Cache;
+
+internal sealed record CacheEntry<T>(T Value, DateTimeOffset ExpiresAt);

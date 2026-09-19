@@ -1,1 +1,3 @@
-// Deterministic request definition: index, key, optional delay-after-release.
+namespace SingleFlightCacheStampedeLab.Workloads;
+
+public sealed record WorkloadRequest(int Index, string Key, TimeSpan DelayAfterRelease = default);
